@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+    {{ form_row(form.brochure) }}
+    {{ form_errors(form.brochure) }}
+    <input type="submit">
+    {{ form_end(form) }}
+
+{% endblock %}
